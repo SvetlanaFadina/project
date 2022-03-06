@@ -1,0 +1,5 @@
+.mainpage {
+  background: url(/mainpic/beach.png) center center/cover no-repeat;
+  height: 100vh;
+  min-height: 650px;
+}
