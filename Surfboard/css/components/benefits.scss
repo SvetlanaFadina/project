@@ -1,0 +1,26 @@
+.benefits {
+    display: flex;
+}
+.benefits__item {
+    flex: 1;
+    position: relative;
+    padding: 0 2%;
+
+    &:first-child {
+        padding-left: 0;
+
+    }
+    &:last-child {
+        padding-right: 0px;
+        &::before {
+            display: none;
+        }
+    }
+    &::before {
+        content: url(../../img/benefits/dots.png);
+        position: absolute;
+        top: 50px;
+        right: 0;
+        transform: translate(50%);
+    }
+}
