@@ -860,7 +860,7 @@ button {
   border-radius: 4px;
 }
 .radio--checkbox .radio__visible::before {
-  background: url(/img/forms/tick.png) center no-repeat;
+  background: url(../img/forms/tick.png) center no-repeat;
 }
 
 .radio__elem {
