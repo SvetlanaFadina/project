@@ -1,0 +1,24 @@
+.offer__list {
+    display: flex;
+}
+.offer__item {
+    margin-right: 33px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+.offer__item {
+    display: flex;
+}
+.offer__icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 13px;
+}
+.offer__text {
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 90px;
+    line-height: 18px;
+}
