@@ -429,7 +429,7 @@ button {
 }
 
 .mainpage {
-  background: url(../../img/mainpic/bg.png) center top/cover no-repeat;
+  background: url(/img/mainpic/bg.png) center top/cover no-repeat;
   height: 100vh;
   min-height: 655px;
   color: #FFFFFF;
