@@ -10,6 +10,11 @@
     display: inline-block;
     border: none;
     cursor: pointer;
+    margin-right: 22px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
 
     &:hover {
         background: #FFD517;
