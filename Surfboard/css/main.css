@@ -549,6 +549,10 @@ button {
   display: inline-block;
   border: none;
   cursor: pointer;
+  margin-right: 22px;
+}
+.button:last-child {
+  margin-right: 0px;
 }
 .button:hover {
   background: #FFD517;
@@ -563,11 +567,8 @@ button {
   cursor: pointer;
   padding-left: 0;
   padding-right: 0;
-  margin-right: 22px;
 }
-.button:last-child {
-  margin-right: 0px;
-}
+
 .button-theme-transparent:hover {
   background: transparent;
 }
