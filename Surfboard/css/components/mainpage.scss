@@ -1,0 +1,23 @@
+.mainpage__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: rem(24px) rem(0px) rem(70px) rem(0px);
+
+    @include tablets {
+        width: 100%;
+        padding: 0;
+    }
+}
+.mainpage {
+    background: url(../../img/mainpic/bg.png) center top / cover no-repeat;
+    height: 100vh;
+    min-height: rem(655px);
+    color: #FFFFFF;
+    margin-bottom: rem(102px);
+
+    @include phones {
+        margin-bottom: rem(5px);
+    }
+}

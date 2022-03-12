@@ -1,0 +1,29 @@
+.offer__list {
+    display: flex;
+}
+.offer__item {
+    margin-right: rem(33px);
+
+    &:last-child {
+        margin-right: rem(0px);
+    }
+}
+.offer__item {
+    display: flex;
+}
+.offer__item {
+    @include tablets {
+        display: none;
+    }
+}
+.offer__icon {
+    width: rem(36px);
+    height: rem(36px);
+    margin-right: rem(13px);
+}
+.offer__text {
+    font-size: rem(16px);
+    font-weight: bold;
+    max-width: rem(90px);
+    line-height: rem(18px);
+}

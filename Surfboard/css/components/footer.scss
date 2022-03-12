@@ -1,0 +1,17 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: rem(23px);
+    background: #FFFFFF; 
+}
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: none;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
