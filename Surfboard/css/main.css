@@ -450,7 +450,7 @@ button {
 }
 
 .mainpage {
-  background: url(../../img/mainpic/bg.png) center top/cover no-repeat;
+  background: url(../img/mainpic/bg.png) center top/cover no-repeat;
   height: 100vh;
   min-height: 36.3888888889rem;
   color: #FFFFFF;
@@ -642,7 +642,7 @@ button {
 }
 
 .order-section {
-  background: url(../../img/forms/bg.png) rgba(0, 0, 0, 0.6);
+  background: url(../img/forms/bg.png) rgba(0, 0, 0, 0.6);
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
@@ -664,7 +664,7 @@ button {
 }
 
 .map-section {
-  background: url(../../img/footer/map.png) center center/cover no-repeat;
+  background: url(../img/footer/map.png) center center/cover no-repeat;
 }
 
 .headline {
@@ -724,7 +724,7 @@ button {
   display: none;
 }
 .benefits__item::before {
-  content: url(../../img/benefits/dots.png);
+  content: url(../img/benefits/dots.png);
   position: absolute;
   top: 2.7777777778rem;
   right: 0;
@@ -1029,7 +1029,7 @@ button {
   border-radius: 0.2222222222rem;
 }
 .radio--checkbox .radio__visible::before {
-  background: url(/img/forms/tick.png) center no-repeat;
+  background: url(../img/forms/tick.png) center no-repeat;
 }
 
 .radio__elem {
