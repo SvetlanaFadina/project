@@ -435,7 +435,7 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  padding: 1.3333333333rem 0rem 3.8888888889rem 0rem;
+  padding: 0rem 0rem 3.8888888889rem 0rem;
 }
 @media screen and (max-width: 768px) {
   .mainpage__container {
