@@ -1577,7 +1577,11 @@ button {
 
 .slider__pic::before {
   content: "";
+<<<<<<< HEAD
   background: url(/img/slider/board.png) no-repeat;
+=======
+  background: url(../img/slider/board.png) no-repeat;
+>>>>>>> db249fac32391c460f3f3f10f251c814075b1bd9
   width: 16.6666666667rem;
   height: 22.2222222222rem;
   top: 0;
