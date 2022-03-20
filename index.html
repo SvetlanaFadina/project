@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    
+
     <div class="wrapper">
         <main class="maincontent">
             <section class="mainpage section">
@@ -20,7 +20,7 @@
                             <img class="logo__pic">
                             <svg class="logo__icon">
                                 <use xlink:href="svg/sprite.svg#logo"></use>
-                              </svg>
+                            </svg>
                         </a>
                         <nav class="menu header__menu">
                             <ul class="menu__list">
@@ -52,15 +52,51 @@
                                 <img class="phone-number__icon--pic">
                                 <svg class="phone__svg">
                                     <use xlink:href="svg/sprite.svg#phone"></use>
-                                  </svg>
+                                </svg>
                             </span>
                             <span class="phone-number__text">8 800 903 90 90</span>
                         </a>
-                        <a href="" class="hamburger">
-                            <span class="hamburger__line"></span>
-                            <span class="hamburger__line"></span>
-                            <span class="hamburger__line"></span>
-                        </a>
+                        <div class="main-menu">
+                            <a href="" class="hamburger" id="hamburger">
+                                <span class="hamburger__line"></span>
+                                <span class="hamburger__line"></span>
+                                <span class="hamburger__line"></span>
+                            </a>
+                            <div class="float-menu" id="float">
+                                <div class="container float-menu__container">
+                                    <div class="close-button" id="close-button">
+                                        <a href="#" class="close-button__link">
+                                            <svg class="close-button-icon">
+                                                <use xlink:href="svg/sprite.svg#cross"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <ul class="float-menu__list">
+                                        <li class="float-menu__item">
+                                            <a href="#" class="float-menu__link">О нас</a>
+                                        </li>
+                                        <li class="float-menu__item">
+                                            <a href="#" class="float-menu__link">Серфборды</a>
+                                        </li>
+                                        <li class="float-menu__item">
+                                            <a href="#" class="float-menu__link">Команда</a>
+                                        </li>
+                                        <li class="float-menu__item">
+                                            <a href="#" class="float-menu__link">Меню</a>
+                                        </li>
+                                        <li class="float-menu__item">
+                                            <a href="#" class="float-menu__link">Отзывы</a>
+                                        </li>
+                                        <li class="float-menu__item">
+                                            <a href="#" class="float-menu__link">Как мы работаем</a>
+                                        </li>
+                                        <li class="float-menu__item">
+                                            <a href="#" class="float-menu__link">Контакты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </header>
 
                     <div class="main__overview">
@@ -84,7 +120,7 @@
                                     <img class="offer__img">
                                     <svg class="offer__pic">
                                         <use xlink:href="svg/sprite.svg#material"></use>
-                                      </svg>
+                                    </svg>
                                 </div>
                                 <div class="offer__text">Прочные материалы</div>
                             </li>
@@ -93,7 +129,7 @@
                                     <img class="offer__img">
                                     <svg class="offer__pic">
                                         <use xlink:href="svg/sprite.svg#car"></use>
-                                      </svg>
+                                    </svg>
                                 </div>
                                 <div class="offer__text">Быстрая доставка</div>
                             </li>
@@ -114,13 +150,14 @@
                                         <img class="benefit__icon">
                                         <svg class="benefit__pic benefit__pic--human">
                                             <use xlink:href="svg/sprite.svg#human"></use>
-                                          </svg>
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="benefit__text">
                                     <h3 class="benefit__title">Perfect Fit</h3>
                                     <div class="benefit__desc">
-                                        <p class="benefit__slogan">Мы создаем доски по индивидуальным замерам. Мы учитываем при создании ваш
+                                        <p class="benefit__slogan">Мы создаем доски по индивидуальным замерам. Мы
+                                            учитываем при создании ваш
                                             рост, вес и уровень подготовки.</p>
                                     </div>
                                 </div>
@@ -131,7 +168,7 @@
                                         <img class="benefit__icon">
                                         <svg class="benefit__pic">
                                             <use xlink:href="svg/sprite.svg#quality"></use>
-                                          </svg>
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="benefit__text">
@@ -148,7 +185,7 @@
                                         <img class="benefit__icon">
                                         <svg class="benefit__pic">
                                             <use xlink:href="svg/sprite.svg#unique"></use>
-                                          </svg>
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="benefit__text">
@@ -162,6 +199,64 @@
                         </ul>
                     </div>
                 </div>
+            </section>
+            <section class="section">
+                <container class="container">
+                    <div class="slider">
+                        <div class="slider-image">
+                            <div class="slider-image__arrow">
+                                <a href="#">
+                                    <svg class="arrow__svg">
+                                        <use xlink:href="svg/sprite.svg#arrowleft"></use>
+                                      </svg>
+                                </a>
+                            </div>
+                            <div class="slider__pic">
+                                <img class="slider__pic--img">
+                                <svg class="spot__svg">
+                                    <use xlink:href="svg/sprite.svg#spot"></use>
+                                  </svg>
+                            </div>
+                            <div class="slider-image__arrow">
+                                <a href="#">
+                                    <svg class="arrow__svg">
+                                        <use xlink:href="svg/sprite.svg#arrowright"></use>
+                                      </svg>
+                                </a>
+                            </div>
+                        </div>
+                            <div class="slider__overview">
+                                <div class="slider__description">
+                                    <h3 class="slider__title">ЛОНГБОРД 2.0.</h3>
+                                    <p class="slider__text">Устойчивая доска для новичков. На них легко лежать, сидеть,
+                                        грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
+                                        очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по
+                                        ним.
+                                    </p>
+                                </div>
+                                <div class="slider__parameters">
+                                    <ul class="slider_parameters__list">
+                                        <li class="slider__parameters__item">
+                                            <h4 class="slider__parameters__item--name">Длина доски</h4>
+                                            <h4 class="slider__parameters__item--length">от 2,5 метров</h4>
+                                        </li>
+                                        <li class="slider__parameters__item">
+                                            <h4 class="slider__parameters__item--name">Ширина доски</h4>
+                                            <h4 class="slider__parameters__item--length">от 40 сантиметров</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="slider__order">
+                                    <h2 class="slider__order-value">7000 ₽</h2>
+                                    <div class="slider__button">
+                                        <input type="submit" value="Заказать" class="button">
+                                    </div>
+                                </div>
+
+                            </div>
+                        
+                    </div>
+                </container>
             </section>
             <section class="section">
                 <div class="container reviews__container">
@@ -290,7 +385,7 @@
                                     <img class="phone-number__icon--pic">
                                     <svg class="phone__svg footer-phone__pic">
                                         <use xlink:href="svg/sprite.svg#phone"></use>
-                                      </svg>
+                                    </svg>
                                 </span>
                                 <span class="phone-number__text">8 800 903 90 90</span>
                             </a>
@@ -313,8 +408,8 @@
                             <li class="socials__item socials__item--instagram">
                                 <a href="#" class="socials__link">
                                     <svg class="social__icon">
-                                    <use xlink:href="svg/sprite.svg#img-instagram"></use>
-                                </svg></a>
+                                        <use xlink:href="svg/sprite.svg#img-instagram"></use>
+                                    </svg></a>
                             </li>
                             <li class="socials__item socials__item--twitter">
                                 <a href="#" class="socials__link">
@@ -360,35 +455,8 @@
             </li>
         </ul>
     </nav>
-    <div class="float-menu">
-        <div class="container float-menu__container">
-            <ul class="float-menu__list">
-                <li class="float-menu__item">
-                    <a href ="#" class ="float-menu__link">О нас</a>
-                </li>
-                <li class="float-menu__item">
-                    <a href ="#" class ="float-menu__link">Серфборды</a>
-                </li>
-                <li class="float-menu__item">
-                    <a href ="#" class ="float-menu__link">Команда</a>
-                </li>
-                <li class="float-menu__item">
-                    <a href ="#" class ="float-menu__link">Меню</a>
-                </li>
-                <li class="float-menu__item">
-                    <a href ="#" class ="float-menu__link">Отзывы</a>
-                </li>
-                <li class="float-menu__item">
-                    <a href ="#" class ="float-menu__link">Как мы работаем</a>
-                </li>
-                <li class="float-menu__item">
-                    <a href ="#" class ="float-menu__link">Контакты</a>
-                </li>
-               
-            </ul>
-        </div>
     </div>
-    </div>
+    <script src="./js/float-menu.js"></script>
 </body>
 
 </html>

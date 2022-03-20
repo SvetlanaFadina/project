@@ -1,11 +1,35 @@
-.float-menu__container {
-    background: #313131;;
+.float-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1000;
+    
+
+    @include tablets {
+        
+    }
 }
-.float-menu__list {
+.float-menu__container {
+    background: #313131;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: rem(135px) rem(258px) rem(328px);
+    
+}
+.float-menu__list {
+    height: 70%;
+    margin-top: rem(135px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
 }
 .float-menu__link {
     font-size: rem(36px);

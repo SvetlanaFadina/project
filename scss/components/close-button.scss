@@ -1,0 +1,12 @@
+.close-button {
+    position: absolute;
+    top:rem(42px);
+    right: rem(42px);
+}
+.close-button__link{
+    display: block;
+}
+.close-button-icon {
+    width: rem(20px);
+    height: rem(20px);
+}
