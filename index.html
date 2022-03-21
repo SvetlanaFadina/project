@@ -100,7 +100,7 @@
                     </header>
 
                     <div class="main__overview">
-                        <h1 class="main__overview-title">ПРОФЕССИОНАЛЬНЫЕ ДОСКИ ДЛЯ СЕРФИНГА</h1>
+                        <h2 class="main__overview-title">ПРОФЕССИОНАЛЬНЫЕ ДОСКИ ДЛЯ СЕРФИНГА</h2>
                         <div class="main__overview-text">Самый большой выбор серфбордов в мире</div>
                         <a href="#" class="button main__button">ЗАКАЗАТЬ</a>
                     </div>
@@ -201,62 +201,79 @@
                 </div>
             </section>
             <section class="section">
-                <container class="container">
+                <div class="container slider__container">
                     <div class="slider">
-                        <div class="slider-image">
-                            <div class="slider-image__arrow">
+                        <div class="slider-image__arrow">
+                            <a href="#">
+                                <svg class="arrow__svg">
+                                    <use xlink:href="svg/sprite.svg#arrowleft"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="slider__pic">
+                            <div class="slider-image__arrow-tablets">
                                 <a href="#">
                                     <svg class="arrow__svg">
                                         <use xlink:href="svg/sprite.svg#arrowleft"></use>
-                                      </svg>
+                                    </svg>
                                 </a>
                             </div>
-                            <div class="slider__pic">
-                                <img class="slider__pic--img">
-                                <svg class="spot__svg">
-                                    <use xlink:href="svg/sprite.svg#spot"></use>
-                                  </svg>
-                            </div>
-                            <div class="slider-image__arrow">
+                            <svg class="slider__pic--spot">
+                                <use xlink:href="svg/sprite.svg#spot"></use>
+                            </svg>
+                            <div class="slider-image__arrow-tablets">
                                 <a href="#">
                                     <svg class="arrow__svg">
                                         <use xlink:href="svg/sprite.svg#arrowright"></use>
-                                      </svg>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
-                            <div class="slider__overview">
-                                <div class="slider__description">
-                                    <h3 class="slider__title">ЛОНГБОРД 2.0.</h3>
-                                    <p class="slider__text">Устойчивая доска для новичков. На них легко лежать, сидеть,
-                                        грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
-                                        очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по
-                                        ним.
-                                    </p>
+                        <div class="slider__overview">
+                            <div class="slider__description">
+                                <div class="slider__description-icon">
+                                    <a href="#" class="slider__description-img">
+                                        <svg class="parameters__svg" width="38" height="38">
+                                            <use xlink:href="svg/sprite.svg#parameters"></use>
+                                        </svg>
+                                        <div class="slider__description-text">ПАРАМЕТРЫ</div>
+                                    </a>
                                 </div>
-                                <div class="slider__parameters">
-                                    <ul class="slider_parameters__list">
-                                        <li class="slider__parameters__item">
-                                            <h4 class="slider__parameters__item--name">Длина доски</h4>
-                                            <h4 class="slider__parameters__item--length">от 2,5 метров</h4>
-                                        </li>
-                                        <li class="slider__parameters__item">
-                                            <h4 class="slider__parameters__item--name">Ширина доски</h4>
-                                            <h4 class="slider__parameters__item--length">от 40 сантиметров</h4>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="slider__order">
-                                    <h2 class="slider__order-value">7000 ₽</h2>
-                                    <div class="slider__button">
-                                        <input type="submit" value="Заказать" class="button">
-                                    </div>
-                                </div>
-
+                                <h3 class="slider__title">ЛОНГБОРД 2.0.</h3>
+                                <p class="slider__text">Устойчивая доска для новичков. На них легко лежать, сидеть,
+                                    грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
+                                    очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по
+                                    ним.
+                                </p>
                             </div>
-                        
+                            <div class="slider__parameters">
+                                <ul class="slider_parameters__list">
+                                    <li class="slider__parameters__item">
+                                        <h4 class="slider__parameters__item--name">Длина доски</h4>
+                                        <h4 class="slider__parameters__item--length">от 2,5 метров</h4>
+                                    </li>
+                                    <li class="slider__parameters__item">
+                                        <h4 class="slider__parameters__item--name">Ширина доски</h4>
+                                        <h4 class="slider__parameters__item--length">от 40 сантиметров</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider__order">
+                                <div class="slider__order-value">7000 ₽</div>
+                                <div class="slider__button">
+                                    <a href="#" class="button slider__button">ЗАКАЗАТЬ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-image__arrow">
+                            <a href="#">
+                                <svg class="arrow__svg">
+                                    <use xlink:href="svg/sprite.svg#arrowright"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                </container>
+                </div>
             </section>
             <section class="section">
                 <div class="container reviews__container">
