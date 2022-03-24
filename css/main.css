@@ -907,9 +907,7 @@ button {
 }
 
 .reviews__display-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 @media screen and (max-width: 768px) {
   .reviews__display-inner {
@@ -922,6 +920,11 @@ button {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+.reviews__display-inner.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .reviews__avatar {

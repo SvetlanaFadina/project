@@ -277,8 +277,8 @@
                 <div class="container reviews__container">
                     <h2 class="section__title  section__title--reviews">ОТЗЫВЫ</h2>
                     <div class="reviews">
-                        <div class="reviews__display">
-                            <div class="reviews__display-inner">
+                        <ul class="reviews__display">
+                            <li data-item="1" class="reviews__display-inner active">
                                 <div class="reviews__avatar">
                                     <img src="./img/reviews/girl.png" alt="girl" class="reviews__avatar-img">
                                 </div>
@@ -293,22 +293,49 @@
                                     </div>
                                     <div class="reviews__author">Ольга Макарова</div>
                                 </article>
-                            </div>
-                        </div>
-                        <ul class="reviews__switcher">
+                            </li>
+                            <li data-item="2" class="reviews__display-inner">
+                                <div class="reviews__avatar">
+                                    <img src="./img/reviews/mark.png" alt="girl" class="reviews__avatar-img">
+                                </div>
+                                <article class="reviews__content">
+                                    <h3 class="reviews__title">Нереальная скорость</h3>
+                                    <div class="reviews__text">
+                                        <p>Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из Surfboard и не пожалел: 1 место на соревнованиях. 
+                                            Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!                                            
+                                        </p>
+                                    </div>
+                                    <div class="reviews__author">Марк Брюлов</div>
+                                </article>
+                            </li>
+                            <li  data-item="3" class="reviews__display-inner">
+                                <div class="reviews__avatar">
+                                    <img src="./img/reviews/vasily.jpg" alt="girl" class="reviews__avatar-img">
+                                </div>
+                                <article class="reviews__content">
+                                    <h3 class="reviews__title">Устойчивость и безопасность</h3>
+                                    <div class="reviews__text">
+                                        <p>Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как безопасность детей на первом месте. Доски были изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка. Теперь дети катаются и им нравится!
+                                        </p>
+                                    </div>
+                                    <div class="reviews__author">Василий Поперечный</div>
+                                </article>
+                            </li>
+                        </ul>
+                        <ul class="reviews__switcher" id="commentAvatars">
                             <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                                <a href="#" class="interactive-avatar__link">
+                                <a href="#" data-open="1" class="interactive-avatar__link">
                                     <img src="./img/reviews/girl.png" alt="girlblackhair"
                                         class="interactive-avatar__img">
                                 </a>
                             </li>
                             <li class="reviews__switcher-item interactive-avatar">
-                                <a href="#" class="interactive-avatar__link">
-                                    <img src="./img/reviews/boy.png" alt="boy" class="interactive-avatar__img">
+                                <a href="#" data-open="2" class="interactive-avatar__link">
+                                    <img src="./img/reviews/mark.png" alt="boy" class="interactive-avatar__img">
                                 </a>
                             </li>
                             <li class="reviews__switcher-item interactive-avatar">
-                                <a href="#" class="interactive-avatar__link">
+                                <a href="#" data-open="3" class="interactive-avatar__link">
                                     <img src="./img/reviews/girl2.png" alt="girl2" class="interactive-avatar__img">
                                 </a>
                             </li>
@@ -471,7 +498,9 @@
         </ul>
     </nav>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/float-menu.js"></script>
+    <script src="./js/reviews.js"></script>
 </body>
 
 </html>
