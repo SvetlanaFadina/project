@@ -22,7 +22,7 @@
                                 <use xlink:href="svg/sprite.svg#logo"></use>
                             </svg>
                         </a>
-                        <nav class="menu header__menu">
+                        <nav class="menu header__menu" id="fullscreenMenu">
                             <ul class="menu__list">
                                 <li class="menu__item">
                                     <a href="#" class="menu__link">О нас</a>
@@ -62,40 +62,6 @@
                                 <span class="hamburger__line"></span>
                                 <span class="hamburger__line"></span>
                             </a>
-                            <div class="float-menu" id="float">
-                                <div class="container float-menu__container">
-                                    <div class="close-button" id="close-button">
-                                        <a href="#" class="close-button__link">
-                                            <svg class="close-button-icon">
-                                                <use xlink:href="svg/sprite.svg#cross"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <ul class="float-menu__list">
-                                        <li class="float-menu__item">
-                                            <a href="#" class="float-menu__link">О нас</a>
-                                        </li>
-                                        <li class="float-menu__item">
-                                            <a href="#" class="float-menu__link">Серфборды</a>
-                                        </li>
-                                        <li class="float-menu__item">
-                                            <a href="#" class="float-menu__link">Команда</a>
-                                        </li>
-                                        <li class="float-menu__item">
-                                            <a href="#" class="float-menu__link">Меню</a>
-                                        </li>
-                                        <li class="float-menu__item">
-                                            <a href="#" class="float-menu__link">Отзывы</a>
-                                        </li>
-                                        <li class="float-menu__item">
-                                            <a href="#" class="float-menu__link">Как мы работаем</a>
-                                        </li>
-                                        <li class="float-menu__item">
-                                            <a href="#" class="float-menu__link">Контакты</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
                     </header>
 
@@ -203,75 +169,107 @@
             <section class="section">
                 <div class="container slider__container">
                     <div class="slider">
-                        <div class="slider-image__arrow">
-                            <a href="#">
-                                <svg class="arrow__svg">
-                                    <use xlink:href="svg/sprite.svg#arrowleft"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="slider__pic">
-                            <div class="slider-image__arrow-tablets">
-                                <a href="#">
-                                    <svg class="arrow__svg">
-                                        <use xlink:href="svg/sprite.svg#arrowleft"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                            <svg class="slider__pic--spot">
-                                <use xlink:href="svg/sprite.svg#spot"></use>
+                        <a href="#" class="slider__arrow slider__arrow--prev">
+                            <svg class="slider__arrow-svg">
+                                <use xlink:href="svg/sprite.svg#arrowleft"></use>
                             </svg>
-                            <div class="slider-image__arrow-tablets">
-                                <a href="#">
-                                    <svg class="arrow__svg">
-                                        <use xlink:href="svg/sprite.svg#arrowright"></use>
+                        </a>
+                        <ul class="slider__list">
+                            <li class="slider__item">
+                                <div class="slider__pic">
+                                    <img src="./img/slider/board.png" alt="board" class="slider__image">
+                                    <svg class="slider__pic-spot">
+                                        <use xlink:href="svg/sprite.svg#spot"></use>
                                     </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slider__overview">
-                            <div class="slider__description">
-                                <div class="slider__description-icon">
-                                    <a href="#" class="slider__description-img">
-                                        <svg class="parameters__svg" width="38" height="38">
-                                            <use xlink:href="svg/sprite.svg#parameters"></use>
-                                        </svg>
-                                        <div class="slider__description-text">ПАРАМЕТРЫ</div>
-                                    </a>
                                 </div>
-                                <h3 class="slider__title">ЛОНГБОРД 2.0.</h3>
-                                <p class="slider__text">Устойчивая доска для новичков. На них легко лежать, сидеть,
-                                    грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
-                                    очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по
-                                    ним.
-                                </p>
-                            </div>
-                            <div class="slider__parameters">
-                                <ul class="slider_parameters__list">
-                                    <li class="slider__parameters__item">
-                                        <h4 class="slider__parameters__item--name">Длина доски</h4>
-                                        <h4 class="slider__parameters__item--length">от 2,5 метров</h4>
-                                    </li>
-                                    <li class="slider__parameters__item">
-                                        <h4 class="slider__parameters__item--name">Ширина доски</h4>
-                                        <h4 class="slider__parameters__item--length">от 40 сантиметров</h4>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="slider__order">
-                                <div class="slider__order-value">7000 ₽</div>
-                                <div class="slider__button">
-                                    <a href="#" class="button slider__button">ЗАКАЗАТЬ</a>
+                                <div class="slider__overview">
+                                    <div class="slider__description">
+                                        <div class="slider__description-wrap">
+                                            <a href="#" class="slider__description-img">
+                                                <svg class="slider__description-icon" width="38" height="38">
+                                                    <use xlink:href="svg/sprite.svg#parameters"></use>
+                                                </svg>
+                                                <div class="slider__description-text">ПАРАМЕТРЫ</div>
+                                            </a>
+                                            <div class="slider__dropdown dropdown">
+                                                <ul class="dropdown__list">
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__icon">
+                                                            <use xlink:href="svg/sprite.svg#length"></use>
+                                                        </svg>
+                                                        <div class="dropdown__name">Длина доски</div>
+                                                        <div class="dropdown__params">от 2,5 м</div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__icon">
+                                                            <use xlink:href="svg/sprite.svg#width"></use>
+                                                        </svg>
+                                                        <div class="dropdown__name">Ширина доски</div>
+                                                        <div class="dropdown__params">от 40 см</div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__icon">
+                                                            <use xlink:href="svg/sprite.svg#thickness"></use>
+                                                        </svg>
+                                                        <div class="dropdown__name">Толщина</div>
+                                                        <div class="dropdown__params">8 см</div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__icon">
+                                                            <use xlink:href="svg/sprite.svg#expiry"></use>
+                                                        </svg>
+                                                        <div class="dropdown__name">Срок службы</div>
+                                                        <div class="dropdown__params">5 лет</div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__icon">
+                                                            <use xlink:href="svg/sprite.svg#weight"></use>
+                                                        </svg>
+                                                        <div class="dropdown__name">Вес</div>
+                                                        <div class="dropdown__params">7-8 кг</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <h3 class="slider__title">ЛОНГБОРД 2.0.</h3>
+                                        <p class="slider__text">Устойчивая доска для новичков. На них легко лежать,
+                                            сидеть,
+                                            грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет
+                                            брать
+                                            очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать
+                                            по
+                                            ним.
+                                        </p>
+                                    </div>
+                                    <div class="slider__parameters">
+                                        <ul class="slider__parameters-list">
+                                            <li class="slider__parameters-item">
+                                                <div class="slider__parameters-item--name">Длина доски</div>
+                                                <div class="slider__parameters-item--length">от 2,5 метров</div>
+                                            </li>
+                                            <li class="slider__parameters-item">
+                                                <div class="slider__parameters-item--name">Ширина доски</div>
+                                                <div class="slider__parameters-item--length">от 40 сантиметров</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="slider__order">
+                                        <div class="slider__order-value">7000 ₽</div>
+                                        <div class="slider__button">
+                                            <a href="#" class="button slider__button">ЗАКАЗАТЬ</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="slider-image__arrow">
-                            <a href="#">
-                                <svg class="arrow__svg">
-                                    <use xlink:href="svg/sprite.svg#arrowright"></use>
-                                </svg>
-                            </a>
-                        </div>
+                            </li>
+                        </ul>
+
+                        <a href="#" class="slider__arrow slider__arrow--next">
+                            <svg class="slider__arrow-svg">
+                                <use xlink:href="svg/sprite.svg#arrowright"></use>
+                            </svg>
+                        </a>
+
                     </div>
                 </div>
             </section>

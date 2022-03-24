@@ -26,6 +26,11 @@
 .form__row {
     display: flex;
     padding-top: rem(5px);
+
+    @include phones {
+        padding-top: 0;
+        margin-bottom: rem(11px);
+    }
 }
 .form__row--right {
     flex-direction: column;
@@ -62,7 +67,7 @@
     &--textarea {
         height: rem(152px);
         resize: none;
-        margin-bottom: rem(28px);
+        margin-bottom: rem(5px) rem(8px);
 
         @include tablets {
             padding: rem(18px);
