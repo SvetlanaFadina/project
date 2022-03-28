@@ -2,9 +2,9 @@ const commentAvatars = document.querySelector('#commentAvatars');
 
 const findReview = (id) => {
     const activeReview = document.querySelector('.reviews__display-inner.active');
-    activeReview.classList.remove('.active');
+    activeReview.classList.remove('active');
     let currentItem = document.querySelector(`.reviews__display-inner[data-item="${id}"]`);
-    currentItem.classList.add('.active');
+    currentItem.classList.add('active');
 };
 
 commentAvatars.addEventListener('click', (e) => {

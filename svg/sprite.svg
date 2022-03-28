@@ -76,4 +76,10 @@
       <symbol viewBox="0 0 18 18" id="width">
         <path d="M3.4085 10.4797L0.51327 7.58335L0.514976 17.4948L10.4258 17.4959L7.52946 14.6007L14.5914 7.54097L17.4861 10.4356L17.4855 0.524211L7.57354 0.523074L10.4693 3.41887L3.4085 10.4797Z"></path>
       </symbol>
+      <symbol viewBox="0 0 9 7" id="triangle_down">
+        <path d="M4.5 7L0.602887 0.249999L8.39711 0.25L4.5 7Z"></path>
+      </symbol>
+      <symbol viewBox="0 0 8 8" id="triangle_up">
+        <path d="M4.00002 0.5L7.89713 7.25L0.102901 7.25L4.00002 0.5Z"></path>
+      </symbol>
 </svg>

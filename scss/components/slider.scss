@@ -1,6 +1,9 @@
 .slider {
     position: relative;
 }
+.slider__container {
+    margin-bottom: rem(257px);
+}
 .slider__item {
     display: flex;
     align-items: flex-start;
@@ -235,7 +238,7 @@
 .slider__order-value {
     font-size: rem(60px);
     color: #151515;
-    margin-right: rem(54px);
+    margin-right: rem(36px);
 
     @include tablets {
         margin-right: rem(41px);
@@ -313,4 +316,12 @@
 }
 .dropdown__params {
     margin-left: auto;
+}
+.bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+.modal {
+    display: none;
 }
