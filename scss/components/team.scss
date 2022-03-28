@@ -20,8 +20,11 @@
     width: rem(9px);
     height: rem(9px);
 }
+.triangle__down {
+    display: inline-block;
+}
 .triangle__up {
-    display: none;
+   display: none;
 }
 .team--version--desktop {
     display: flex;

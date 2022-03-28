@@ -2048,6 +2048,10 @@ button {
   height: 0.5rem;
 }
 
+.triangle__down {
+  display: inline-block;
+}
+
 .triangle__up {
   display: none;
 }
