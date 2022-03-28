@@ -187,6 +187,8 @@
     @include phones {
         width: 80%;
         padding: 0;
+        padding-left: rem(9px);
+        margin-bottom: 23px;
 }
 }
 .slider__parameters {
@@ -203,6 +205,8 @@
 
     @include tablets {
         padding-left: rem(36px);
+        padding-left: 34px;
+        padding-top: 2px;
     }
     
     @include phones {
@@ -227,7 +231,7 @@
     align-items: center;
 
     @include tablets {
-        padding-left: rem(7px);
+        padding-left: rem(12px);
     } 
     
     @include phones {
@@ -241,7 +245,8 @@
     margin-right: rem(36px);
 
     @include tablets {
-        margin-right: rem(41px);
+        margin-right: rem(16px);
+        margin-left: rem(-10px);
     }
 
     @include phones {

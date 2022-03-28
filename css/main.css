@@ -1829,6 +1829,8 @@ button {
   .slider__text {
     width: 80%;
     padding: 0;
+    padding-left: 0.5rem;
+    margin-bottom: 23px;
   }
 }
 
@@ -1855,6 +1857,8 @@ button {
 @media screen and (max-width: 768px) {
   .slider__parameters-list {
     padding-left: 2rem;
+    padding-left: 34px;
+    padding-top: 2px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1886,7 +1890,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .slider__order {
-    padding-left: 0.3888888889rem;
+    padding-left: 0.6666666667rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1903,7 +1907,8 @@ button {
 }
 @media screen and (max-width: 768px) {
   .slider__order-value {
-    margin-right: 2.2777777778rem;
+    margin-right: 0.8888888889rem;
+    margin-left: -0.5555555556rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2024,7 +2029,18 @@ button {
   font-size: 1.1666666667rem;
   font-weight: bold;
   color: #292929;
-  margin-bottom: 0.4444444444rem;
+  margin-bottom: 0.3333333333rem;
+}
+@media screen and (max-width: 768px) {
+  .team__title {
+    margin-bottom: 0.8333333333rem;
+    padding-left: 0.9444444444rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__title {
+    margin-bottom: 0.7777777778rem;
+  }
 }
 
 .triangle {
@@ -2056,11 +2072,16 @@ button {
 }
 
 .team-section__title {
-  margin-bottom: 53px;
+  margin-bottom: 2.4444444444rem;
 }
 @media screen and (max-width: 768px) {
   .team-section__title {
-    margin-bottom: 1.8888888889rem;
+    margin-bottom: 1.4444444444rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-section__title {
+    margin-bottom: 2rem;
   }
 }
 
@@ -2079,15 +2100,28 @@ button {
       -ms-flex: 1;
           flex: 1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .team__item {
-    margin-bottom: 1.7777777778rem;
+    margin-bottom: -9px;
   }
 }
 
 .team__member {
-  margin-bottom: 21px;
+  margin-bottom: 1.1666666667rem;
   margin-right: 0.5555555556rem;
+}
+@media screen and (max-width: 768px) {
+  .team__member {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team__img {
+    width: 7.6111111111rem;
+    height: 9.8333333333rem;
+  }
 }
 
 .team__content {
@@ -2127,15 +2161,29 @@ button {
 .team__occupation {
   font-size: 1rem;
   color: #000000;
+  padding-bottom: 0.3888888889rem;
 }
 @media screen and (max-width: 768px) {
   .team__occupation {
     font-weight: bold;
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__occupation {
+    margin-bottom: -0.1666666667rem;
   }
 }
 
 .team__text {
   width: 98%;
+  line-height: 21.6px;
+  padding-left: 0.5555555556rem;
+}
+@media screen and (max-width: 768px) {
+  .team__text {
+    padding: 0;
+  }
 }
 
 .modal {
