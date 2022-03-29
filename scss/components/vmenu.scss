@@ -1,0 +1,44 @@
+.vmenu {
+    background: url(../../img/vmenu/main.png) center center / cover no-repeat;
+    position: relative;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+.vmenu__list {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.vmenu__item {
+    display: flex;
+}
+.vmenu__button {
+    color: #FFFFFF;
+    min-width: 5.55rem;
+    background: center center / cover no-repeat;
+    position: relative;
+    max-width: rem(102px);
+    text-decoration: none;
+}
+.vmenu__button-text {
+    font-size: rem(48px);
+    font-weight: bold;
+    text-decoration: none;
+    transform: rotate(-90deg) translateX(-534px); 
+}
+.vmenu__content {
+    background: #333537;
+    width: 0;
+    overflow: hidden;
+    transition: max-width 0.3s linear;
+}
+.vmenu__text {
+    padding: rem(31px) rem(38px);
+}
+.main-title__white {
+    transform: translate(84px, -200px);
+    font-size: rem(48px);
+    font-weight: bold;
+}

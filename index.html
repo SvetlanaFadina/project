@@ -364,10 +364,10 @@
                                 <img src="./img/team/boris.png" alt="boris">
                             </div>
                             <button class="team__title" type="button">Борис Федорович
-                                <svg class="triangle">
+                                <svg class="triangle triangle__down">
                                     <use xlink:href="svg/sprite.svg#triangle_down" class="triangle__down"></use>
                                   </svg>
-                                  <svg class="triangle">
+                                  <svg class="triangle triangle__up">
                                     <use xlink:href="svg/sprite.svg#triangle_up" class="triangle__up"></use>
                                   </svg>
                             </button>
@@ -455,11 +455,11 @@
                     <ul class="team team--version--mobile">
                         <li class="team__item">
                             <button class="team__title" type="button">Борис Федорович
-                                <svg class="triangle__img">
-                                    <use xlink:href="svg/sprite.svg#triangle_down" class="triangle"></use>
+                                <svg class="triangle triangle__down">
+                                    <use xlink:href="svg/sprite.svg#triangle_down" class="triangle triangle__down"></use>
                                   </svg>
-                                  <svg class="triangle__img">
-                                    <use xlink:href="svg/sprite.svg#triangle_up" class="triangle"></use>
+                                  <svg class="triangle">
+                                    <use xlink:href="svg/sprite.svg#triangle_up" class="triangle triangle__up"></use>
                                   </svg>
                             </button>
                             <div class="team__content">
@@ -539,6 +539,33 @@
                         </li>
                     </ul>
                 </div>
+            </section>
+            <section class="section vmenu">
+                <h2 class="vmenu__title main-title__white">МЕНЮ</h2>
+                <ul class="vmenu__list" id="horizontalMenu">
+                    <li class="vmenu__item">
+                        <a href="#" class="vmenu__button" style="background-image: url(./img/vmenu/second.png)">
+                        <div class="vmenu__button-text">ЛОНГБОРДЫ</div>
+                        </a>
+                        <div class="vmenu__content">
+                            <p class="vmenu__text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</p>
+                        </div>
+                    </li>
+                    <li class="vmenu__item">
+                        <a href="#" class="vmenu__button" style="background-image: url(./img/vmenu/third.png)">
+                            <div class="vmenu__button-text">ШОРТБОРДЫ</div></a>
+                        <div class="vmenu__content">
+                            <p class="vmenu__text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</p>
+                        </div>
+                    </li>
+                    <li class="vmenu__item">
+                        <a href="#" class="vmenu__button" style="background-image: url(./img/vmenu/forth.png)">
+                            <div class="vmenu__button-text">СОФТТОПЫ</div></a>
+                        <div class="vmenu__content">
+                            <p class="vmenu__text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.</p>
+                        </div>
+                    </li>
+                </ul>
             </section>
             <section class="section">
                 <div class="container reviews__container">
@@ -792,6 +819,7 @@
     <script src="./js/carouselle.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/vmenu.js"></script>
 </body>
 
 </html>
