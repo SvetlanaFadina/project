@@ -23,9 +23,9 @@ $('.form').submit(e => {
 
     modal.removeClass("error-modal");
 
-    const isValid = validateFields(form, [name, phone, comment, to]);
+    const isValid = validateFields(form, [name, phone, comment]);
 
-    if (isValid == 0) {
+    if (isValid) {
         const request = $.ajax ({
             url: "https://webdev-api.loftschool.com/sendmail",
             method: "post",
@@ -38,10 +38,6 @@ $('.form').submit(e => {
         });
         request.done(data => {
             content.text(data.message);
-            $.fancybox.open({
-                src: "#modal",
-                type: "inline",
-            });
         });
         request.fail(data => {
             const message = data.responseJSON.message;

@@ -9,12 +9,12 @@
     }
 
     @include phones{
-        margin-bottom: rem(9px);
+        margin-bottom: rem(8px);
     }
 }
 .headline__subtitle {
     padding: 0 27%;
-    margin-bottom: rem(51px);
+    margin-bottom: rem(57px);
     line-height: rem(22px);
 
     @include tablets {

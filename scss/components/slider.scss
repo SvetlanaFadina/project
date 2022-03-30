@@ -34,7 +34,7 @@
 }
 .slider__arrow {
     position: absolute;
-    top: 50%;
+    top: 44%;
     transform: translateY(-50%);
     z-index: 3;
 
@@ -42,10 +42,11 @@
         left: rem(-23px);
 
         @include tablets {
-            left: 19%;
+            left: 18%;
         }
 
         @include phones {
+            top: 30;
             left: 0;
         }
     }
@@ -54,7 +55,7 @@
         right: rem(-12px);
 
         @include tablets {
-            right: 19%;
+            right: 20%;
         }
 
         @include phones {
@@ -63,11 +64,11 @@
     }
 
     @include tablets {
-        top: 32%;
+        top: 30%;
     }
 
     @include phones {
-        top: 29%;
+        top: 27%;
     }
 }
 .slider__pic {
@@ -78,7 +79,7 @@
         margin-right: 0;
         display: flex;
         align-items: center;
-        margin-bottom: rem(23px);
+        margin-bottom: rem(10px);
         width: rem(310px);
         height: rem(390px);
     }
@@ -86,6 +87,7 @@
     @include phones {
         width: rem(242px);
         height: rem(347px);
+        margin-bottom: rem(25px);
     }
     
 }
@@ -125,10 +127,12 @@
     @include tablets {
         font-size: rem(30px);
         margin-bottom: rem(11px);
+        margin-left: rem(-16px);
     }
 
     @include phones {
-        margin-bottom: rem(8px);
+        margin-bottom: rem(10px);
+        margin-left: 0;
     }
 }
 .slider__description-wrap {
@@ -183,11 +187,12 @@
     @include tablets {
         width: 74%;
         text-align: center;
+        margin-left: rem(-13px);
     }
     @include phones {
         width: 80%;
         padding: 0;
-        padding-left: rem(9px);
+        padding-left: 0;
         margin-bottom: 23px;
 }
 }
@@ -205,7 +210,7 @@
 
     @include tablets {
         padding-left: rem(36px);
-        padding-left: 34px;
+        padding-left: rem(22px);
         padding-top: 2px;
     }
     
@@ -225,13 +230,18 @@
     font-weight: bold;
     color: #000000;
 
+    @include tablets {
+        margin-top: rem(-4px);
+        margin-bottom: rem(-4px);
+    }
+
 }
 .slider__order {
     display: flex;
     align-items: center;
 
     @include tablets {
-        padding-left: rem(12px);
+        padding-top: rem(6px);
     } 
     
     @include phones {
@@ -242,11 +252,12 @@
 .slider__order-value {
     font-size: rem(60px);
     color: #151515;
-    margin-right: rem(36px);
+    margin-right: rem(55px);
 
     @include tablets {
-        margin-right: rem(16px);
-        margin-left: rem(-10px);
+        margin-right: rem(38px);
+        margin-left: rem(-7px);
+       
     }
 
     @include phones {

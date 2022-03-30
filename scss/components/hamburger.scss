@@ -15,6 +15,10 @@
             .hamburger__line {
                 &:nth-child(1) {
                     transform: rotate(45deg) translate(6px, 6px);
+
+                    @include phones {
+                        transform: rotate(45deg) translate(3px, 3px);
+                    }
                 }
                 &:nth-child(2) {
                     transform: rotate(-45deg);
@@ -33,4 +37,8 @@
     border-radius: 10px;
     transition: transform 0.3s, opacity 0.3s;
     opacity: 1;
+
+    @include phones {
+        margin-bottom: 2px;
+    }
 }

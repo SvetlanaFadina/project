@@ -44,6 +44,11 @@
     }
     &--textarea {
         margin-right: 0;
+        margin-bottom: rem(26px);
+
+        @include tablets {
+            margin-bottom: 0;
+        }
     }
 }
 .form__title {

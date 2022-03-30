@@ -22,7 +22,7 @@
 
     @include phones {
         font-size: rem(16px);
-        padding: rem(18px) rem(37px);
+        padding: rem(16px) rem(36px);
     }
 }
 .button-theme-transparent {
@@ -37,5 +37,10 @@
 
     &:hover {
         background: transparent;
+    }
+}
+.main__button {
+    @include phones {
+        font-size: rem(19px);
     }
 }

@@ -2,15 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: rem(44px);
+    margin-bottom: rem(41px);
 
     @include tablets {
         background: #1968B1;
-        padding: rem(26px) rem(31px);
+        padding: rem(31px) rem(29px) rem(21px)rem(33px);
     }
     
     @include phones {
-        padding: rem(25px) rem(10px);
+        padding: rem(25px) rem(9px) rem(20px);
+        margin-bottom: rem(173px);
     }
 }
 .header__menu {

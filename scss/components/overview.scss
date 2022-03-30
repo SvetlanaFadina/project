@@ -21,23 +21,27 @@
     font-size: rem(48px);
     font-weight: bold;
     line-height: rem(58px);
-    margin-bottom: rem(20px);
+    margin-bottom: rem(15px);
 
     @include tablets {
+        padding-top: 12px;
+        padding-left: 10px;
         margin-bottom: rem(8px);
     }
 
     @include phones {
         line-height: (36px);
         font-size: rem(40px);
+        padding-left: 0;
+        margin-bottom: rem(12px);
     }
 }
 .main__overview-text {
     font-size: rem(21px);
-    margin-bottom: rem(40px); 
+    margin-bottom: rem(44px); 
 
     @include tablets {
-        margin-left: rem(20px);
+        margin-left: rem(26px);
     }
 
     @include phones {
