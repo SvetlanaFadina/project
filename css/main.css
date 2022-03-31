@@ -735,10 +735,6 @@ button {
   }
 }
 
-.map-section {
-  background: url(../img/footer/map.png) center center/cover no-repeat;
-}
-
 .headline {
   text-align: center;
 }
@@ -2338,6 +2334,7 @@ button {
     top: 0;
     bottom: 0;
     z-index: 3;
+    max-width: unset;
   }
 }
 .vmenu__item--active .vmenu__content {
@@ -2409,8 +2406,14 @@ button {
 }
 @media screen and (max-width: 480px) {
   .main-title__white {
+    width: 10%;
+    height: 10%;
     font-size: 2.2222222222rem;
     -webkit-transform: translate(-103px, 66px);
             transform: translate(-103px, 66px);
   }
+}
+
+.ymap {
+  height: inherit;
 }
