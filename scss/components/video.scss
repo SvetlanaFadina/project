@@ -200,6 +200,6 @@ input[type='range']::-webkit-slider-thumb {
     width: 11px;
     border-radius: 50%;
 }
-input .sound__level {
-    background-image: grey;
+input[type='range']::-webkit-slider-thumb .sound__level {
+    background-color: grey;
 }

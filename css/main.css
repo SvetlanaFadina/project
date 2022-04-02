@@ -2281,7 +2281,7 @@ button {
 }
 
 .vmenu {
-  background: url(../../img/vmenu/main.png) center center/cover no-repeat;
+  background: url(../img/vmenu/main.png) center center/cover no-repeat;
   position: relative;
   color: #FFFFFF;
 }
@@ -2682,6 +2682,6 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 50%;
 }
 
-input .sound__level {
-  background-image: grey;
+input[type=range]::-webkit-slider-thumb .sound__level {
+  background-color: grey;
 }
