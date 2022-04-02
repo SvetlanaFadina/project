@@ -80,8 +80,6 @@ function soundOff () {
         video.volume = soundLevel;
         soundControl.value = soundLevel * 10;
         soundButton.classList.remove('sound--active');
-        $('soundLevel').css('background-image', 'grey');
-        
     } else {
         soundLevel = video.volume;
         video.volume = 0;

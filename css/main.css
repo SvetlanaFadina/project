@@ -2636,6 +2636,14 @@ button {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
+.sound--active input[type=range] .sound__level {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  border-radius: 6px;
+  height: 6px;
+  margin-right: 1.3333333333rem;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, grey));
+}
 .sound--active::before {
   opacity: 1;
 }
@@ -2680,8 +2688,4 @@ input[type=range]::-webkit-slider-thumb {
   height: 11px;
   width: 11px;
   border-radius: 50%;
-}
-
-input[type=range]::-webkit-slider-thumb .sound__level {
-  background-color: grey;
 }
