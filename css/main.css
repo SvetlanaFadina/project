@@ -659,6 +659,10 @@ button {
   }
 }
 
+.order__button {
+  margin-left: -0.5555555556rem;
+}
+
 .section {
   height: 100vh;
   min-height: 36.1111111111rem;
@@ -1144,7 +1148,7 @@ button {
 
 .form__input {
   width: 100%;
-  padding: 0.2777777778rem 0.5555555556rem;
+  padding: 0.8888888889rem 0.5555555556rem;
   border: solid 0.1666666667rem transparent;
   border-radius: 0.2222222222rem;
 }
