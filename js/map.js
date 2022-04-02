@@ -11,7 +11,7 @@ const init = () => {
 
     const myPlacemark = new ymaps.Placemark ((coords), {}, {
         iconLayout: 'default#image',
-        iconImageHref: URL('../img/map/placemark.png'),
+        iconImageHref: '/project/img/map/placemark.png',
         iconImageSize: [58, 73],
         iconImageOffset: [-20, -60]
     });
