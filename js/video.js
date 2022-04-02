@@ -4,7 +4,7 @@ const playerPlayButton = document.querySelector('.duration__img');
 const durationControl = document.getElementById('durationLevel');
 const soundControl = document.getElementById('soundLevel');
 const soundButton = document.getElementById('soundButton');
-const dynamicButton = document.querySelector('.sound__mic'); 
+const dynamicButton = document.getElementById('dynamic'); 
 let intervalId;
 let soundLevel;
 
@@ -30,6 +30,7 @@ video.addEventListener("loadeddata", function() {
     soundControl.addEventListener('input', changeSoundVolume);
 
     dynamicButton.addEventListener('click', soundOff);
+    console.log('click');
 
     video.addEventListener('ended', () => {
         playButton.classList.toggle('video__player-img--active');
