@@ -20,19 +20,20 @@ const getItemWidth = (item) => {
     return resultWidth;
 }
 
-const setItemWidth = (item, width) => {
+const setItemWidth = (item, width, setWidthToText = true) => {
     const itemContent = item.nextElementSibling;
-    const itemText = item.firstElementChild;
+    const itemText = itemContent.firstElementChild;
     itemContent.style.width = `${width}px`;
-    itemText.style.width = `${width}px`;
+    if (setWidthToText) {
+        itemText.style.width = `${width}px`;
+    }
 }
 
 const closeItem = (item) => {
     const itemParent = item.parentElement;
     itemParent.classList.remove('vmenu__item--active');
     item.classList.remove('vmenu__button--active');
-    setItemWidth(item, 0);
-    
+    setItemWidth(item, 0, false);
 }
 
 

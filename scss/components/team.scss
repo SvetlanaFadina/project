@@ -55,6 +55,7 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
+    margin-right: rem(10px);
 
     @include phones {
         margin-bottom: -9px;
@@ -62,8 +63,7 @@
 }
 .team__member {
     margin-bottom: rem(21px);
-    margin-right: rem(10px);
-
+  
     @include tablets {
         margin-bottom: rem(18px);
         margin-right: 0;

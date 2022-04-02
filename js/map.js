@@ -3,32 +3,24 @@ let myMap;
 const init = () => {
 
     myMap = new ymaps.Map("map", {
-        center: [55.76, 37.64],
-        zoom: 15
+        center: [55.752004, 37.576133],
+        zoom: 14
     });
 
-    const coords = [
-        [55.75, 37.50],
-        [55.75, 37.71],
-        [55.70, 37.70]
-    ];
+    const coords = [55.752004, 37.576133];
 
-    const myCollection = new ymaps.GeoObjectCollection({}, {
-        draggable: false,
+    const myPlacemark = new ymaps.Placemark ((coords), {}, {
         iconLayout: 'default#image',
-        iconImageHref: "",
-        iconImageSize: [],
-        iconImageOffset: []
+        iconImageHref: '../img/map/placemark.png',
+        iconImageSize: [58, 73],
+        iconImageOffset: [-20, -60]
     });
 
-    coords.forEach(coord => {
-        myCollection.add(new ymaps.Placemark(coord));
-    });
 
-    myMap.geoObjects.add(myCollection);
+    myMap.geoObjects.add(myPlacemark);
 
-    myMap.behaviors.disable('scrollZoom');
-
+   
+    myMap.behaviors.disable('drag');
 }
 
 ymaps.ready(init);

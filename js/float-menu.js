@@ -5,4 +5,5 @@ hamburger.addEventListener('click', function(e) {
     e.preventDefault();
     hamburger.classList.toggle('hamburger--active');
     menu.classList.toggle('menu--active');
+    pageScroll.toggleBlock();
 })

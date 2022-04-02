@@ -31,6 +31,7 @@
 }
 .vmenu__item {
     display: flex;
+    background: #333537;
 
     @include phones {
         max-width: rem(90px);

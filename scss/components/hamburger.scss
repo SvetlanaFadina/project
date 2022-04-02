@@ -17,7 +17,7 @@
                     transform: rotate(45deg) translate(6px, 6px);
 
                     @include phones {
-                        transform: rotate(45deg) translate(3px, 3px);
+                        transform: rotate(45deg) translate(5px, 5px);
                     }
                 }
                 &:nth-child(2) {

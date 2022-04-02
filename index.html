@@ -618,6 +618,41 @@
                     </div>
                 </div>
             </section>
+            <section class="section video">
+                <div class="container video__container">
+                    <h2 class="video__title">Как мы работаем</h2>
+                    <div class="video__wrapper">
+                        <div class="video__player">
+                            <video src="./video/video.mp4" id="player" poster="./img/video/background.png">
+                                <source src="./video/video.mp4" type="video/mp4">
+                            </video>
+                            <button class="play video__player-img">
+                                <img src="./img/video/playmain.svg" alt="" class="video__button-img">
+                            </button>
+                        </div>
+                        <div class="video__toolbar">
+                            <div class="duration">
+                                <div class="duration__button-wrap">
+                                    <button class="play duration__img">
+                                        <img src="" alt="">
+                                    </button>
+                                </div>
+                                <div class="duration__length-wrap">
+                                    <input type="range" min="1" max="100" step="1" value="15" class="duration__length" id="durationLevel">
+                                </div>
+                            </div>
+                            <div class="sound"  id="soundButton">
+                                <button class="sound__button">
+                                    <img src="/img/video/volume.svg" alt="" class="sound__mic" id="dynamic">
+                                </button>
+                                <div class="sound__volume">
+                                    <input type="range" min="1" max="100" step="1" value="15" class="sound__level" id="soundLevel">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="section order-section">
                 <div class="container">
                     <h2 class="section__title section__title--order">ЗАКАЖИТЕ ДОСКУ</h2>
@@ -745,31 +780,31 @@
     </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
-            <li class="fixed-menu__item fixed-menu__item--active">
+            <li class="fixed-menu__item fixed-menu__item--active" data-scroll-to="1">
                 <a href="" class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
+            <li class="fixed-menu__item" data-scroll-to="1">
                 <a href="" class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
+            <li class="fixed-menu__item" data-scroll-to="2">
                 <a href="" class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
+            <li class="fixed-menu__item" data-scroll-to="3">
                 <a href="" class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
+            <li class="fixed-menu__item" data-scroll-to="4">
                 <a href="" class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
+            <li class="fixed-menu__item" data-scroll-to="5">
                 <a href="" class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
+            <li class="fixed-menu__item" data-scroll-to="6">
                 <a href="" class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
+            <li class="fixed-menu__item" data-scroll-to="7">
                 <a href="" class="fixed-menu__link"></a>
             </li>
-            <li class="fixed-menu__item">
+            <li class="fixed-menu__item" data-scroll-to="8">
                 <a href="" class="fixed-menu__link"></a>
             </li>
         </ul>
@@ -799,6 +834,9 @@
     <script src="./js/vmenu.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="./js/map.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/ops.js"></script>
+    <script src="./js/pageScroll.js"></script>
 </body>
 
 </html>
