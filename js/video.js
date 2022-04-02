@@ -79,10 +79,12 @@ function soundOff () {
     if (video.volume == 0) {
         video.volume = soundLevel;
         soundControl.value = soundLevel * 10;
-        soundButton.classList.remove('active');
+        soundButton.classList.remove('sound--active');
+        $('soundLevel').css('background-image', 'grey');
+        
     } else {
         soundLevel = video.volume;
-        video.video = 0;
+        video.volume = 0;
         soundControl.value = 0;
         soundButton.classList.add('sound--active');
     }
