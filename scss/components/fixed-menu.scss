@@ -17,6 +17,13 @@
         }
     }
 }
+.fixed-menu--dark .fixed-menu__item {
+    &--active {
+        .fixed-menu__link {
+            border-color: black;
+        }
+    }
+}
 .fixed-menu__link {
     width: rem(18px);
     height: rem(18px);
@@ -36,5 +43,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+.fixed-menu--dark .fixed-menu__link {
+    &::before {
+        content: "";
+        background: black;
     }
 }

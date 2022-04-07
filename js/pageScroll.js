@@ -1,25 +1,36 @@
-const pageScroll = {
-    block: () => {
-        console.log("block!");
-        localStorage.setItem("isScrollLocked", true);
-        },
-    unblock: () => {
-        console.log("unblock!");
-        localStorage.setItem("isScrollLocked", false);
-    },
-    toggleBlock: function () {
-        if (this.isBlocked()) {
-            this.unblock();
-        } else {
-            this.block();
-        }
-    },
-    isBlocked: () => {
-        console.log("blocked?", localStorage.getItem("isScrollLocked"));
-        return JSON.parse(localStorage.getItem("isScrollLocked"));
-    }
+const sections = $(".section");
+const display = $(".maincontent");
+let inscroll = false;
+
+const switchActiveClassSideMenu = (menuItemIndex) => {
+    $(".fixed-menu__item")
+        .eq(menuItemIndex)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
 };
-pageScroll.unblock();
+
+const performTransition = (sectoinEq) => {
+    if (pageScroll.isBlocked()) {
+        return;
+    }
+    if (inscroll) return;
+
+    inscroll = true;
+
+    const position = `${sectoinEq * -100}%`;
+
+    sections.eq(sectoinEq).addClass("active").siblings().removeClass("active");
+
+    display.css({
+        transform: `translateY(${position})`,
+    });
+
+    setTimeout(() => {
+        switchActiveClassSideMenu(sectoinEq);
+        inscroll = false; 
+     }, 1000 + 300);
+}
 
 
 
