@@ -1,0 +1,44 @@
+.hamburger {
+    width: rem(25px);
+    height: rem(22px);
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    position: relative;
+    z-index: 1001;
+
+    @include tablets {
+        display: inline-flex;
+        margin-right: rem(4px);
+
+        &--active {
+            .hamburger__line {
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(6px, 6px);
+
+                    @include phones {
+                        transform: rotate(45deg) translate(5px, 5px);
+                    }
+                }
+                &:nth-child(2) {
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(3) {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+.hamburger__line {
+    display: block;
+    background: #FFFFFF;
+    height: 4px;
+    border-radius: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 1;
+
+    @include phones {
+        margin-bottom: 2px;
+    }
+}

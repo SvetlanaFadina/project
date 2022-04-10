@@ -1,0 +1,113 @@
+.vmenu {
+    background: url(../img/vmenu/main.png) center center / cover no-repeat;
+    position: relative;
+    color: #FFFFFF;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 0,  0, 0.1);
+    }
+    @include phones {
+        flex-direction: unset;
+        justify-content: flex-end;
+        margin-bottom: rem(92px);
+    }
+}
+.vmenu__list {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    
+    @include phones {
+        position: unset;
+    }
+}
+.vmenu__item {
+    display: flex;
+    background: #333537;
+
+    @include phones {
+        max-width: rem(90px);
+        &--active {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 3;
+            max-width: unset;
+        }
+    }
+    &--active {
+        .vmenu__content {
+            opacity: 1;
+        }
+    }
+}
+.vmenu__button {
+    color: #FFFFFF;
+    min-width: 5.55rem;
+    background: center center / cover no-repeat;
+    position: relative;
+    max-width: rem(102px);
+    text-decoration: none;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 0,  0, 0.7);
+    }
+}
+.vmenu__button-text {
+    font-size: 2.6666666667rem;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    transform-origin: 0 0;
+    transform: rotate(-90deg) translateY(-50%);
+    bottom: 0;
+    left: 50%; 
+
+    @include phones {
+        font-size: rem(40px);
+    }
+}
+.vmenu__content {
+    background: #333537;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: width 0.3s linear; 
+}
+.vmenu__text {
+    padding: rem(31px) rem(38px);
+}
+.main-title__white {
+    width: 20%;
+    height: 20%;
+    transform: translate( rem(84px), rem(-187px));
+    font-size: rem(48px);
+    font-weight: bold;
+
+    @include tablets {
+        transform: translate(37px, -225px);
+    }
+    
+    @include phones {
+        width: 10%;
+        height: 10%;
+        font-size: rem(40px);
+        transform: translate(-103px, 66px);
+    }
+}

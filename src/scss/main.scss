@@ -1,0 +1,21 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//z-indexes
+$z-fixed-menu: 100;
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+//media
+@import "media";
+
+//layout
+@import "layout/**/*.scss";
+
+
+//components
+@import "components/**/*.scss";
+
