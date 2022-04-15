@@ -10,12 +10,12 @@ $tablets: 768px;
 $phones: 480px;
 
 //media
-@import "media";
+@import "./media.scss";
 
 //layout
-@import "layout/**/*.scss";
-
+@import "layout/fonts";
+@import "layout/base";
 
 //components
-@import "components/**/*.scss";
+@import "components/*.scss";
 

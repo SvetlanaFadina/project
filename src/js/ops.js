@@ -77,7 +77,7 @@ const viewportScroller = () => {
         },
         prev() {
             if (prevSection.length) {
-                startTransitionn(prevSection.index());
+                startTransition(prevSection.index());
             }
         }
     } 

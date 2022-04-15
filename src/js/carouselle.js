@@ -4,11 +4,11 @@ const slider = $('.slider__list').bxSlider({
 });
 
 
-$('.slider__arrow--prev').click(e => {
+$('.slider__arrow--prev').on('click', e => {
 	e.preventDefault();
 	slider.goToPrevSlide();
 })
-$('.slider__arrow--next').click(e => {
+$('.slider__arrow--next').on('click', e => {
 	e.preventDefault();
 	slider.goToNextSlide();
 })

@@ -16,6 +16,7 @@
     @include phones {
         margin-bottom: rem(14px);
         padding-left: rem(7px);
+        margin-left: 0;
     }
 }
 .triangle {
@@ -59,6 +60,7 @@
 
     @include phones {
         margin-bottom: -9px;
+        margin-right: rem(0px);
     }
 }
 .team__member {
